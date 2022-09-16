@@ -1,13 +1,7 @@
 lifePoint = document.querySelector("#life");
 cards = document.querySelectorAll(".card");
-ImagesUrl = [
-  "/images/HTML-1.png",
-  "/images/HTML-1.png",
-  "/images/JAVA-1.jpg",
-  "/images/JAVA-1.jpg",
-  "/images/PYTHON-1.jfif",
-  "/images/PYTHON-1.jfif",
-];
+text = document.querySelector("#MG");
+ImagesUrl = ["/images/HTML.png", "/images/JAVA.jpg", "/images/c++.png"];
 
 // Adding images
 ImagesUrl = shuffle(ImagesUrl);
@@ -39,15 +33,18 @@ cards.forEach((card) => {
         lifePoint.textContent -= 1;
       }
     }
+    if (lifePoint.textContent <= 0) {
+      lifePoint.textContent = 0;
+      text.children[0].textContent = "YOU LOST !";
+    }
 
     flipped = document.querySelectorAll(".flipping");
-    // console.log(flipped);
 
-    // if (flipped.length == 2) {
-    //   flipped.forEach((key) => {
-    //     key.classList.toggle("flipping");
-    //   });
-    // }
+    if (flipped.length == 6) {
+      if (text.children[0].textContent != "YOU LOST !") {
+        text.children[0].textContent = "YOU WON !";
+      }
+    }
   });
 });
 
