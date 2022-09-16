@@ -16,6 +16,12 @@ for (let i = 0; i < ImagesUrl.length; i++) {
   el.src = ImagesUrl[i];
 }
 
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("flipping");
+  });
+});
+
 // Shuffling elements
 function shuffle(array) {
   let currentIndex = array.length,
