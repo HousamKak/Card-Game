@@ -1,10 +1,18 @@
 lifePoint = document.querySelector("#life");
 cards = document.querySelectorAll(".card");
 text = document.querySelector("#MG");
-ImagesUrl = ["/images/HTML.png", "/images/JAVA.jpg", "/images/c++.png"];
+ImagesUrl = [
+  "/images/HTML.png",
+  "/images/HTML.png",
+  "/images/JAVA.jpg",
+  "/images/JAVA.jpg",
+  "/images/php.png",
+  "/images/php.png",
+];
 
 // Adding images
 ImagesUrl = shuffle(ImagesUrl);
+console.log(ImagesUrl);
 for (let i = 0; i < ImagesUrl.length; i++) {
   j = i + 1;
   el = document.querySelector("#im" + j);
