@@ -73,6 +73,9 @@
   backface-visibility: hidden;
 }
 
+.display {
+  display: none;
+}
 .image {
   position: absolute;
   height: 100%;
