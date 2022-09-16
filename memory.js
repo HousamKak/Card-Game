@@ -17,7 +17,6 @@ for (let i = 0; i < ImagesUrl.length; i++) {
   el.src = ImagesUrl[i];
 }
 //
-
 cards.forEach((card) => {
   card.addEventListener("click", () => {
     if (!card.classList.contains("flipping")) {
@@ -37,6 +36,7 @@ cards.forEach((card) => {
         card.classList.toggle("flipping");
         previous.classList.toggle("flipping");
         card.classList.toggle("prev");
+        lifePoint.textContent -= 1;
       }
     }
 
