@@ -4,15 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card game</title>
+    <link rel="stylesheet" href="/styles/memory.css" />
+    <title>Memory Game</title>
   </head>
   <body>
     <!-- The Container of the screen -->
     <section class="global-container">
       <!-- Header Section -->
-      <div class="header"></div>
+      <div class="header">
+        <div class="header-text"><p>Memory Game</p></div>
+        <div class="life-points">
+          <p>Life Points:</p>
+          <p id="life">3</p>
+        </div>
+      </div>
       <!-- Description Section -->
-      <div class="description"></div>
+      <div class="description">
+        <p>
+          This is a simple memory game. You have to match two cards at every
+          trial. Start by pressing on any card. This game relies totally on
+          luck, so lets test how lucky you are! You don't have too many lifes to
+          waste :p
+        </p>
+      </div>
       <!-- Cards Section -->
       <div class="cards">
         <!-- First Card -->
